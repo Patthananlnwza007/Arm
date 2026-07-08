@@ -1,0 +1,15 @@
+print("--- โปรแกรมแปลงค่าเซลเซียส เป็น ฟาเรนไฮต์ (พิมพ์ 'exit' เพื่อเลิกทำ) ---")
+
+while True:
+    user_input = input("กรุณากรอกอุณหภูมิ (องศาเซลเซียส): ")
+    
+    # ตรวจสอบว่าผู้ใช้ต้องการออกจากโปรแกรมหรือไม่
+    if user_input.lower() == 'exit':
+        print("ปิดโปรแกรม เรียบร้อยแล้ว")
+        break
+        
+    # แปลงค่าและคำนวณ
+    celsius = float(user_input)
+    fahrenheit = (celsius * 1.8) + 32
+    
+    print(f"{celsius} องศาเซลเซียส = {fahrenheit:.2f} องศาฟาเรนไฮต์\n")
