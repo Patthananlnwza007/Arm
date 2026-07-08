@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Output</title>
+</head>
+<body>
+
+<?php
+// กำหนดตัวแปรสำหรับฝั่งซ้าย
+$a = 3;
+$b = 4;
+$sum = $a + $b;
+?>
+
+<table border="0" cellpadding="10" cellspacing="0">
+    <tr>
+        <td valign="top" style="padding-right: 50px;">
+            <h3>ผลลัพธ์</h3>
+            ค่าของ $a คือ <?php echo $a; ?><br>
+            ค่าของ $b คือ <?php echo $b; ?><br>
+            ผลรวมของ $a และ $b คือ <?php echo $sum; ?><br>
+        </td>
+        
+        <td valign="top">
+            <h3>ผลลัพธ์</h3>
+            $A=B<br>
+            $$A=20.5<br>
+            $B=20.5<br>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
